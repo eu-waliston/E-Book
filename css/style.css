@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-website: 'Poppins', sans-serif;
+    --background-color: #1b1a1a;
+    --font-color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #272626;
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #272626 10px ), repeating-linear-gradient( #c5821d55, #c5821d );
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+
+    position: relative;
+    top: 20%;
+}
+
+.square h1 {
+    color: #FF3D00;
+    font-family: var(--font-website);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+span {
+    font-weight: 200;
+    color: #fff;
+    text-transform: initial;
+}
+
+
+
+.banner {
+    width: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    animation: upDown 6s ease infinite;
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 45px rgba(0, 0, 0, 0.74);
+}
+
+
+@keyframes upDown {
+    0% {
+        transition: .5s;
+        transform: translateY(10px);
+    }
+
+    50% {
+        transition: .5s;
+        transform: translateY(-10px) ;
+    }
+
+    100% {
+        transition: .5s;
+        transform: translateY(10px);
+
+    }
+}
+
+.bnt__download {
+    background-color: #FF3D00;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--font-website);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.bnt__download:hover {
+    border: 1px solid #fff;
+    transition: .5s;
+    background-color: #e65224;
+
+}
